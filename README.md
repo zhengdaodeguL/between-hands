@@ -49,6 +49,7 @@ The Start application was successfully submitted on 2026-09-28 and is awaiting r
 - [Design](docs/DESIGN.md) and [development](docs/DEVELOPMENT.md) specifications
 - [Competition requirements](docs/COMPETITION.md) and [Start status](docs/START-STATUS.md)
 - [English Devpost draft](docs/DEVPOST.md)
+- [Scoped desktop performance observation](docs/PERFORMANCE.md)
 
 This is a new competition project, separate from SupperShift. Third-party tools and dependencies retain their own licenses. Final competition submission must be performed personally by the entrant after eligibility and all deliverables are resolved.
 

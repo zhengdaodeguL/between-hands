@@ -15,13 +15,13 @@ Submission deadline: **2026-11-19 04:00 Asia/Shanghai** (2026-11-18 20:00 UTC). 
 | --- | --- | --- |
 | New work during competition period | Repository history and development record | Must be maintained |
 | Playable URL entry | Stable public HTTPS URL and independent access check | Verified 2026-09-29; public three-chapter desktop walkthrough passed |
-| English submission materials | Final English title, description, instructions and required responses | Draft ready; target launch date remains pending |
+| English submission materials | Final English title, description, instructions and required responses | Draft ready; proposed launch date awaits entrant review |
 | Public demo under 3 minutes | Export duration plus accessible public video URL | 65.03-second file verified; YouTube publication deferred by the user |
 | Device or emulator demonstration | Honestly labeled recorded spatial gameplay | Local IWER footage verified; no real-device claims |
 | Start membership at submission | Authoritative approval/active membership evidence | Pending; application alone is insufficient |
 | Developer Access at competition start, §2(c) | Historical authoritative account evidence or organizer clarification | Unresolved |
 | Track and division | Form selections: Gaming / New Experience | Prepared; not submitted |
-| Target launch date, if not published to the Meta VR Store | Entrant-decided planned date in the submission materials | Missing; awaiting the entrant's decision |
+| Target launch date, if not published to the Meta VR Store | Entrant-decided planned date in the submission materials | Proposed 2026-11-10; entrant must confirm or revise before submission |
 | Free access through the Winner Announcement | Public app remains accessible without charge until the announcement, expected around 2026-12-11 | Must be maintained |
 | Submission freeze after the deadline | Preserve the submitted build and materials without changes after the Entry Period ends | Required after 2026-11-18 20:00 UTC |
 | Personal final submission, §3 | Entrant completes the official submission workflow | Not submitted |
@@ -42,7 +42,7 @@ The Start application was successfully submitted on 2026-09-28 and remains pendi
 
 For IWSDK / WebXR, judges need a working application link; GitHub Pages is one supported hosting option, and another host may be used. The rules do not separately require a public source repository. The project and its access must remain free of charge and available through the Winner Announcement, currently expected around **2026-12-11**. After the Entry Period ends, do not change the submitted build or submission materials; judging uses their state at the deadline.
 
-The submission must identify **Gaming / New Experience** and include a target launch date if the project has not been published to the Meta VR Store. No target date has been supplied by the entrant. Leave that field explicitly pending and obtain the entrant's decision before final submission; do not invent a date or present the draft as submitted.
+The submission must identify **Gaming / New Experience** and include a target launch date if the project has not been published to the Meta VR Store. The draft proposes 2026-11-10 as a planning date, leaving time before the competition deadline. This proposal is not an entrant-approved commitment; obtain confirmation or a revised date before final submission. Do not present the draft as submitted.
 
 ## Submission boundary
 

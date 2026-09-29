@@ -354,8 +354,8 @@ class GardenSystem extends createSystem({}) {
 async function boot() {
   world = await World.create(el("scene-container"), projectOptions);
   world.scene.background = new Color(colors.background);
-  world.scene.add(new HemisphereLight(0xf3ebdd, 0x183529, 2.5));
-  const light = new DirectionalLight(0xffe0b0, 3);
+  world.scene.add(new HemisphereLight(colors.text, colors.ambientGround, 2.5));
+  const light = new DirectionalLight(colors.sunlight, 3);
   light.position.set(1, 3, 2);
   world.scene.add(light);
   const stageEntity = world.createTransformEntity(stage, { persistent: true });

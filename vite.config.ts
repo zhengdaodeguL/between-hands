@@ -11,11 +11,18 @@ import { mkdir, open, rm, writeFile } from "node:fs/promises";
 import { randomUUID } from "node:crypto";
 import { dirname, isAbsolute, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { colors } from "./src/theme/tokens";
 
 // Keep repository guidance in source without publishing it as game content.
 const projectDirectory = dirname(fileURLToPath(import.meta.url));
 const buildDirectory = resolve(projectDirectory, "dist");
 const bundledModules = new Set<string>();
+const themeMetadata: Plugin = {
+  name: "between-hands-theme-metadata",
+  transformIndexHtml(html) {
+    return html.replace("__THEME_BACKGROUND__", colors.background);
+  },
+};
 
 // Apply to both the application and its workers, and retain the actual shipped
 // module inventory locally for the release-license audit.
@@ -175,7 +182,7 @@ const localCapture: Plugin = {
   },
 };
 export default defineConfig({
-  plugins: [iwsdkDev({ https: false }), auditBundledDependencies(), omitAgentGuidance, localCapture],
+  plugins: [iwsdkDev({ https: false }), themeMetadata, auditBundledDependencies(), omitAgentGuidance, localCapture],
   worker: { plugins: () => [auditBundledDependencies(true)] },
   server: { host: "0.0.0.0", port: 8081, open: false },
   build: {

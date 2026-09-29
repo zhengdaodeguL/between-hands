@@ -3,6 +3,7 @@
 ## Prototype fixes — 2026-09-29
 
 - Show a retry action when the application script or runtime assets fail to load.
+- Centralize interface and lighting colors while preserving the rendered appearance.
 
 ## 0.1.0 — 2026-09-29
 

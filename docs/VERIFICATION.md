@@ -100,3 +100,15 @@ Commit 2a12f9c passed the clean GitHub Actions checks and Pages deployment in ru
 Additional headed IWER checks verified pause with identical frame captures over time, automatic pause when entering XR from desktop play, and session exit/reentry. Exit cleared both held-hand states; reentry stayed paused and preserved control positions. Resizing during XR did not duplicate callbacks: a single pinch resumed or paused once. After exit, canvas CSS dimensions returned to 900 × 700. No application errors occurred; the already-recorded Three.js resize warning recurred.
 
 Real tab switching in this automation environment continued to report document.hidden=false, even in headed mode. The actual visibility-loss event path remains unverified; no synthetic property override is counted as a pass. Hardware reach/comfort/frame rate, natural first-play duration, video publication, membership/eligibility decisions, the entrant's launch-date choice, and final personal submission still require external evidence or user action.
+
+## Theme consolidation — 2026-09-29
+
+The remaining interface alpha colors, lighting colors, and developer-capture colors now come from src/theme/tokens.ts. Vite also resolves the browser theme-color metadata from that module. The literal color values were preserved.
+
+At a 1440 × 900 browser viewport, the published version and the refactored production preview had identical computed backgrounds, borders, text, hover color, and browser theme metadata. Full-page RGB screenshots were identical pixel for pixel. The refactored screenshot was visually inspected. Type checking, production build, and all 15 dependency-license copies passed. This verifies preserved desktop appearance; it does not add a hardware-performance claim.
+
+## Scoped desktop performance observation — 2026-09-29
+
+The public production build at 184daa2 was measured in a fresh headless Chrome 153.0.8010.53 session on Windows, with Intel Arc / D3D11, a 1280 × 900 viewport, and DPR 1. Three conditions (stationary play, continuous six-slider input, and the completed garden) each used a five-second warmup and 30 seconds of rAF timestamp sampling. Each produced 1,800 intervals, p50 16.70 ms, p95 16.80 ms, and zero intervals above 50 ms. The continuous-input group dispatched 10,800 ordinary DOM range-input events. Its maximum interval was 19.10 ms.
+
+See PERFORMANCE.md for all condition results, the authored scene-workload inventory, and the retained local raw evidence. This is one headless desktop observation per condition, not a Quest, GPU-completion, or natural first-play measurement. No runtime optimization or hardware claim was inferred from it.

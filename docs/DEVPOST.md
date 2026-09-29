@@ -8,7 +8,7 @@ Start membership is pending. Historical Developer Access eligibility is unresolv
 
 **Track:** Gaming  
 **Division:** New Experience  
-**Target launch date:** Pending the entrant's decision. No date has been supplied; this required draft field must be resolved before final submission if the project is not published to the Meta VR Store.
+**Suggested target launch date:** 2026-11-10 for the WebXR release, subject to hardware validation. This is a provisional planning proposal, not an entrant-approved commitment. The public prototype launched on 2026-09-29; the entrant should confirm or revise the planned release date before submitting.
 
 These are draft field values, not a submitted entry or a confirmed launch commitment.
 

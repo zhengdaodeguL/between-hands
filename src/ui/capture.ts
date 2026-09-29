@@ -1,3 +1,5 @@
+import { colors } from "../theme/tokens";
+
 /** Local developer capture. Frames come exclusively from the live renderer canvas. */
 export function createCapture(source: HTMLCanvasElement): { dispose(): void } {
   const toolbar = document.createElement("aside");
@@ -11,9 +13,9 @@ export function createCapture(source: HTMLCanvasElement): { dispose(): void } {
     gap: "7px",
     padding: "12px",
     width: "224px",
-    color: "#f3ebdd",
-    background: "#071d18f2",
-    border: "1px solid #82d5d0",
+    color: colors.text,
+    background: colors.captureBackground,
+    border: `1px solid ${colors.rain}`,
     borderRadius: "10px",
     font: "13px sans-serif",
     pointerEvents: "auto",
@@ -60,7 +62,7 @@ export function createCapture(source: HTMLCanvasElement): { dispose(): void } {
       video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA &&
       video.videoWidth > 0
     ) {
-      context.fillStyle = "#071d18";
+      context.fillStyle = colors.background;
       context.fillRect(0, 0, 1280, 720);
       const scale = Math.min(1280 / video.videoWidth, 720 / video.videoHeight);
       const width = video.videoWidth * scale,
@@ -72,9 +74,9 @@ export function createCapture(source: HTMLCanvasElement): { dispose(): void } {
         width,
         height,
       );
-      context.fillStyle = "rgba(7,29,24,0.90)";
+      context.fillStyle = colors.captureLabelBackground;
       context.fillRect(18, 18, 480, 42);
-      context.fillStyle = "#f3ebdd";
+      context.fillStyle = colors.text;
       context.font = "20px sans-serif";
       context.fillText("IWER emulator · actual gameplay · silent", 30, 46);
     }
@@ -113,7 +115,7 @@ export function createCapture(source: HTMLCanvasElement): { dispose(): void } {
     link.download = filename;
     link.textContent = label;
     Object.assign(link.style, {
-      color: "#82d5d0",
+      color: colors.rain,
       display: "block",
       padding: "5px 0",
     });
