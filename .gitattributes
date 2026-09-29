@@ -1,0 +1,7 @@
+* text=auto eol=lf
+# Preserve upstream license bytes so provenance hashes survive every checkout.
+public/licenses/** -text
+scripts/license-sources/**/LICENSE -text
+*.png -text
+*.mp4 -text
+*.webm -text

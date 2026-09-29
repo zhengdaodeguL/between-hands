@@ -1,0 +1,8 @@
+{
+  "source": "https://raw.githubusercontent.com/facebook/yoga/v3.2.1/LICENSE",
+  "package": "yoga-layout",
+  "sha256": "52412D7BC7CE4157EA628BBAACB8829E0A9CB3C58F57F99176126BC8CF2BFC85",
+  "reason": "Installed npm package declares MIT but omits the full license file; this is the upstream release-tag text.",
+  "retrieved": "2026-09-29",
+  "version": "3.2.1"
+}
