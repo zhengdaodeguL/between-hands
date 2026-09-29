@@ -92,3 +92,11 @@ The deployed version at commit 63d47da was tested with its entry JavaScript requ
 The fix keeps a small failure handler in the HTML so it remains available when the application module cannot download. Entry-module failures and runtime boot failures now show a concise connection message with a Try again button. Internal error details stay in the console. The overlay uses system fallback colors when JavaScript has not yet applied the game theme.
 
 The local production build was tested twice: aborting the entry-module request, and aborting the lazy world-initializer asset. Both displayed the error and retry control. Removing the simulated network failure and clicking Try again reloaded the page and reached the ordinary game UI in both cases. The error screen was visually inspected. Type checking, production build, and full-license collection passed. Public deployment verification is recorded after publication.
+
+### Deployment and session recovery follow-up
+
+Commit 2a12f9c passed the clean GitHub Actions checks and Pages deployment in run 36533830046. The public HTML contains the independent retry fallback. On the public HTTPS URL, simulated entry-module and lazy runtime-asset failures both showed the retry control; restoring requests and clicking Try again returned to the game. The error overlay was also checked at a 390-pixel viewport without horizontal overflow.
+
+Additional headed IWER checks verified pause with identical frame captures over time, automatic pause when entering XR from desktop play, and session exit/reentry. Exit cleared both held-hand states; reentry stayed paused and preserved control positions. Resizing during XR did not duplicate callbacks: a single pinch resumed or paused once. After exit, canvas CSS dimensions returned to 900 × 700. No application errors occurred; the already-recorded Three.js resize warning recurred.
+
+Real tab switching in this automation environment continued to report document.hidden=false, even in headed mode. The actual visibility-loss event path remains unverified; no synthetic property override is counted as a pass. Hardware reach/comfort/frame rate, natural first-play duration, video publication, membership/eligibility decisions, the entrant's launch-date choice, and final personal submission still require external evidence or user action.
