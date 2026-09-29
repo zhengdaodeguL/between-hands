@@ -2,11 +2,11 @@
 
 A seated, hands-first WebXR puzzle prototype built with IWSDK. Shape a stream of rain using two spatial handles, guide it around stones and through glowing rain orbs, and restore a miniature garden across three chapters.
 
-**Publication authorized and in progress. Public links below are pending verification. The competition entry is not submitted; Start membership and historical eligibility remain unconfirmed.**
+**Public prototype and source published on 2026-09-29. The competition entry is not submitted; Start membership and historical eligibility remain unconfirmed.**
 
-- Planned live experience: https://zhengdaodeguL.github.io/between-hands/
-- Planned source repository: https://github.com/zhengdaodeguL/between-hands
-- YouTube demonstration: publication in progress; no verified URL yet.
+- Play: https://zhengdaodegul.github.io/between-hands/
+- Source: https://github.com/zhengdaodeguL/between-hands
+- YouTube demonstration: deferred by the user; the final MP4 and publishing copy are ready in deliverables/.
 
 ## Run locally
 
@@ -39,7 +39,7 @@ Completion state is saved locally. Reset restarts the current chapter; the endin
 
 ## Current evidence and remaining work
 
-See [VERIFICATION.md](docs/VERIFICATION.md) for the exact tested scope and remaining gates. IWER testing covered the three-chapter hand-input walkthrough, tracking recovery, and spatial controls. Quest hardware hand tracking, comfort, and performance remain unverified. Public deployment is authorized and in progress, with live-link verification still pending. A 65-second English, silent demonstration is available at [deliverables/Between-Hands-demo.mp4](deliverables/Between-Hands-demo.mp4); gameplay is explicitly labeled as slowed emulator footage.
+See [VERIFICATION.md](docs/VERIFICATION.md) for the exact tested scope and remaining gates. IWER testing covered the three-chapter hand-input walkthrough, tracking recovery, and spatial controls. Quest hardware hand tracking, comfort, and performance remain unverified. The public HTTPS app and repository are verified. The public app passed a three-chapter desktop walkthrough and completion restoration after reload. Clean GitHub Actions installation, 9 tests, type checking, build, license collection, and Pages deployment passed. A 65-second English, silent demonstration is available at [deliverables/Between-Hands-demo.mp4](deliverables/Between-Hands-demo.mp4); gameplay is explicitly labeled as slowed emulator footage.
 
 The Start application was successfully submitted on 2026-09-28 and is awaiting review. A user-authorized eligibility clarification was sent to the organizer and checked in the sent folder; no decision is recorded. Neither action establishes eligibility.
 
@@ -65,3 +65,5 @@ After stopping, use **Download demo.webm**; screenshots create a **Download scre
 Original Between Hands code is licensed under the [MIT License](LICENSE), copyright 2026 Liu Yida. Third-party code, dependencies, scaffold files, fonts, and assets retain their separate notices and licenses. Existing Meta copyright headers remain intact. See [third-party notices](docs/THIRD-PARTY-NOTICES.md) and [CHANGELOG.md](CHANGELOG.md) for the initial publication scope.
 
 
+
+See [complete third-party notices](https://zhengdaodegul.github.io/between-hands/THIRD-PARTY-NOTICES.txt). The optional unlicensed UIKitML parser is excluded from the published build; the spatial menu uses programmatic UIKit components.

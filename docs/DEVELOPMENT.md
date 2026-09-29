@@ -53,3 +53,9 @@ Keep the commit or build identifier, environment, command/action, outcome, and d
 Use Git for normal rollback; no packaged backup directories and no explicit checkpoints unless requested. Never include credentials or authentication artifacts in the repository. Track third-party licenses and the provenance of generated or imported assets.
 
 Spatial menu actions activate on pointerdown (pinch onset), so a deliberately slow pinch is not rejected by the SDK 800 ms click-duration limit. Puzzle handles still require explicit release/regrab and both hands held.
+
+## Production licensing boundary (2026-09-29)
+
+The six spatial menu buttons are constructed directly with UIKit/Horizon components in src/scene/menu.ts. A project-owned Vite alias replaces the optional, unlicensed UIKitML parser with explicit unsupported-operation errors. This compatibility boundary is not an official SDK removal switch. Build guards reject real parser modules in both application and worker chunks.
+
+`npm run build` runs Vite, writes the emitted-module inventory under the ignored .iwsdk directory, then collects complete license texts into the site. The script fails if a shipped package has no verified text. Keep the original license bytes and provenance hashes intact.

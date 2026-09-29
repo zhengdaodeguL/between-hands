@@ -1,30 +1,31 @@
-# Between Hands：成果与发布入口
+# Between Hands：成果与剩余事项
 
-## 现在可以看什么
+## 已公开，可直接使用
 
-- 作品：在项目目录运行 `npm run dev`，打开 http://127.0.0.1:4329/ 。
-- 演示：`Between-Hands-demo.mp4`，65.03 秒，1280×720，英文、静音。
-- 演示采用真实 IWER 手势模拟画面；玩法片段明确标注三分之一速度慢放。
-- `Between-Hands-demo-QA.png`：视频八帧预览。
+- 试玩：https://zhengdaodegul.github.io/between-hands/
+- 源码：https://github.com/zhengdaodeguL/between-hands
+- 本地演示：Between-Hands-demo.mp4，65.03 秒，1280×720，英文、静音。
+- 视频发布文案：YOUTUBE-PUBLISH.md。按你的最新决定，YouTube 稍后处理。
 
-## 完成范围
+作品为三关坐姿 WebXR 解谜：双手分别捏住两个控制点，改变雨流曲线，绕开岩石并通过发光球，让花园生长。普通浏览器可点击 Try desktop rehearsal，再点击 Begin this chapter 使用滑块试玩；手部体验需兼容的 XR 浏览器。
 
-Three chapters: Wake the Seed / Share the Rain / Bring the Garden Home。
+## 本轮已完成
 
-双手分别捏住两个控制点，改变雨流的空间曲线，绕开岩石并通过发光收集球；稳定浇水后花园生长。坐姿空间场景与桌面滑块练习使用同一套解谜规则。
-
-已验证：8项规则测试、TypeScript类型检查、生产构建；桌面三关、暂停恢复、刷新恢复；IWER双手三关完成、追踪丢失后释放重抓；空间开始、暂停、恢复、重置、静音、重新定位与退出。
+- 公开仓库已推送；GitHub Pages 云端部署成功。
+- 干净安装、9 项测试、类型检查、生产构建和完整依赖许可收集通过。
+- 公共网址三关桌面玩法、完成后刷新恢复、主要资源访问通过。
+- 新版六按钮空间菜单及第一关到第二关切换通过 IWER 实际手势操作。
+- 390 像素窄屏检查无横向溢出；桌面与窄屏截图已目视核对。
+- 移除发布包中的许可不明解析器，主脚本约 6.59 MB 降至 2.08 MB。
 
 ## 尚未完成
 
-- 已获得公开 GitHub 仓库、试玩页及 YouTube 演示的明确授权，正在执行发布；下列地址尚待上线核验，不能当作已发布结果。
-  - 试玩页：https://zhengdaodeguL.github.io/between-hands/
-  - 仓库：https://github.com/zhengdaodeguL/between-hands
-  - YouTube：尚无核验后的公开链接。
-- Start 申请已提交，审核尚未确认。
-- 关于比赛开始时 Developer Access 要求的询问已按授权发出，尚未记录主办方答复。
-- 尚无 Quest 实机舒适度、手追踪精度或帧率验证；模拟器结果不能替代这些事实。
-- 正式比赛提交仍未完成，按比赛规则应由参赛者本人最终提交。
+1. YouTube 公开视频：按你的决定稍后处理，未上传。
+2. Start 成员审核，以及比赛开始时 Developer Access 历史资格：尚无确认。
+3. 目标正式发布日期：由你决定后填入英文参赛稿。
+4. Quest 实机手追踪、舒适度、性能，以及 6–8 分钟首次游玩时长：尚未测得。
+5. 最终参赛提交：按官方规则应由参赛者本人完成。
 
-完整技术证据与剩余检查见 `../docs/VERIFICATION.md`。
+截止：北京时间 2026-11-19 04:00。提交版本届时需冻结，并保持免费可访问至获奖公布（预计 2026-12-11）。
 
+英文参赛稿见 ../docs/DEVPOST.md；完整验证记录见 ../docs/VERIFICATION.md。

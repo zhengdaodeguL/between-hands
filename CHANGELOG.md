@@ -2,7 +2,7 @@
 
 ## 0.1.0 — 2026-09-29
 
-Initial publication preparation; public endpoints remain pending verification.
+Initial public prototype and source release. GitHub Pages and the public three-chapter desktop walkthrough were verified on 2026-09-29.
 
 - Three chapters of a seated, hands-first WebXR puzzle built with IWSDK.
 - Two spatial handles shape a Bezier rain path around stones and through rain orbs.
@@ -14,3 +14,7 @@ Initial publication preparation; public endpoints remain pending verification.
 - GitHub Pages workflow with installation, tests, type checks, and production build before deployment.
 
 Quest hardware comfort and performance are unverified. Start approval and historical competition eligibility remain unresolved; the entry has not been submitted.
+
+- Programmatic UIKit menu replaces the unlicensed optional parser; a build guard enforces its exclusion.
+- Full third-party license texts accompany production builds.
+- YouTube publication is deferred by the entrant; the local demo remains ready.

@@ -14,10 +14,10 @@ Submission deadline: **2026-11-19 04:00 Asia/Shanghai** (2026-11-18 20:00 UTC). 
 | Requirement | Planned evidence | Current status |
 | --- | --- | --- |
 | New work during competition period | Repository history and development record | Must be maintained |
-| Playable URL entry | Stable public HTTPS URL and independent access check | Not verified |
-| English submission materials | Final English title, description, instructions and required responses | Not verified |
-| Public demo under 3 minutes | Export duration plus accessible public video URL | Not verified |
-| Device or emulator demonstration | Honestly labeled recorded spatial gameplay | Not verified |
+| Playable URL entry | Stable public HTTPS URL and independent access check | Verified 2026-09-29; public three-chapter desktop walkthrough passed |
+| English submission materials | Final English title, description, instructions and required responses | Draft ready; target launch date remains pending |
+| Public demo under 3 minutes | Export duration plus accessible public video URL | 65.03-second file verified; YouTube publication deferred by the user |
+| Device or emulator demonstration | Honestly labeled recorded spatial gameplay | Local IWER footage verified; no real-device claims |
 | Start membership at submission | Authoritative approval/active membership evidence | Pending; application alone is insufficient |
 | Developer Access at competition start, §2(c) | Historical authoritative account evidence or organizer clarification | Unresolved |
 | Track and division | Form selections: Gaming / New Experience | Prepared; not submitted |

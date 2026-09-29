@@ -64,3 +64,23 @@ Final root validation: npm run test (8 passing), npm run typecheck, npm run buil
 
 Production preview on 127.0.0.1:4330 loaded without browser console errors. No developer capture toolbar or emulator was present. Browser viewport override did not produce the requested narrow CSS viewport (DOM remained 1280 px), so mobile verification remains unclaimed. Publication was authorized by the user on 2026-09-29; see the later publication verification below.
 
+
+## Release validation — 2026-09-29
+
+- Initial public source commit: e58a63f. GitHub's clean Ubuntu / Node 24 build passed npm ci, all 9 tests (8 puzzle rules and the parser boundary), type checks, production compilation, and full-license collection.
+- Programmatic UIKit replaces the optional markup parser. Main JavaScript decreased from approximately 6.59 MB to 2.08 MB (561 KB gzip). The emitted manifest has 374 modules and no real @drawcall/uikitml modules. An intentional in-memory import of the real parser was rejected by the build guard.
+- Fifteen shipped npm packages have complete license texts copied into the static site, including Inter OFL. Yoga's pinned upstream license and its SHA256 are retained for reproducible offline license collection.
+- Local production preview was exercised in Chrome using the visible desktop controls for all three chapters. Setting the six range controls dispatched their ordinary input events; no internal game state was assigned. The completed garden survived reload.
+- A real 390 × 844 CSS viewport was verified: document width 390, no horizontal overflow, loading complete. The full-page image was visually inspected for readable text and controls. This is responsive browser evidence, not Quest performance or hand-tracking evidence.
+- Production Chrome console contained zero errors. Unsupported desktop VR was disabled with a compatible-browser message, and developer capture/emulator controls were absent.
+- The user deferred YouTube publication until later. The 65.03-second final MP4 and English publishing text remain available in deliverables; no public YouTube URL is claimed.
+
+### Public deployment and menu regression
+
+The public app at https://zhengdaodegul.github.io/between-hands/ returned HTTP 200. In an independent Chrome automation session, all three chapters completed using the public desktop controls and the completed state survived reload. The main JavaScript, CSS, root license, complete third-party index, and Inter license returned HTTP 200. Public desktop screenshot was visually checked; public browser console had zero errors.
+
+Workflow https://github.com/zhengdaodeguL/between-hands/actions/runs/36527985723 succeeded on attempt 2. The initial clean build passed; deployment initially failed because the newly created GitHub Pages environment allowed only main. The environment was narrowed to the actual codex/between-hands publishing branch and the failed deployment job was rerun successfully.
+
+After the programmatic-menu change, actual IWER Hands UI actions verified Begin, Pause, Resume, Sound, Reset, Recenter, and Exit. Moving the emulated headset to x=0.10 and activating Recenter moved the panel x from 0 to 0.10000000149. Both emulated hands completed chapter one, and a menu pinch on Begin / Next entered Share the Rain. Screenshots showed no menu-label overflow. These checks did not directly assign game state. Exit returned to the desktop correctly; the console had zero errors and one Three.js warning about resizing while VR was presenting. That warning remains recorded rather than being presented as a warning-free XR run.
+
+Local QA screenshots and interaction traces are under the ignored output/playwright directory. Quest hardware testing, first-play timing, eligibility, Start approval, the target launch date, public YouTube upload, and personal final competition submission remain incomplete.

@@ -2,7 +2,7 @@
 
 **DRAFT — NOT SUBMITTED. ELIGIBILITY NOT CONFIRMED.**
 
-Start membership is pending. Historical Developer Access eligibility is unresolved; an authorized inquiry has been sent to the organizer. Publication of the public repository, app, and YouTube demonstration is authorized and in progress; links require final verification. Resolve these items before personally submitting the entry.
+Start membership is pending. Historical Developer Access eligibility is unresolved; an authorized inquiry has been sent to the organizer. The public repository and HTTPS app are published and verified. YouTube publication has been deferred by the entrant; the final video is ready locally. Resolve these items before personally submitting the entry.
 
 ## Submission fields
 
@@ -32,16 +32,15 @@ The project uses TypeScript, IWSDK, Three.js, and WebXR hand input. A cubic Bezi
 
 ## What is verified
 
-Eight puzzle tests and type checks have passed. Browser UI testing completed all three chapters in desktop rehearsal, checked pause/resume, and confirmed finished-state restoration after reload. IWER testing also exercised both hands through all three chapters, tracking recovery, and the spatial menu.
+Nine tests (eight puzzle tests and one parser-boundary test), type checks, and the clean cloud production build have passed. Browser UI testing completed all three chapters in desktop rehearsal, checked pause/resume, and confirmed finished-state restoration after reload. IWER testing also exercised both hands through all three chapters, tracking recovery, and the spatial menu.
 
 Real Quest hand tracking, comfort and performance, and the target first-play duration remain unverified. Desktop rehearsal is not evidence of hand-tracking quality.
 
 ## Next steps
 
-Complete device validation and public-link checks. A 65.03-second English silent demonstration is prepared; the actual IWER gameplay is explicitly slowed to one-third speed for clarity. Confirm Start membership and competition eligibility before submission.
+Complete device validation and YouTube publication. A 65.03-second English silent demonstration is prepared; the actual IWER gameplay is explicitly slowed to one-third speed for clarity. Confirm Start membership and competition eligibility before submission.
 
-**App URL:** https://zhengdaodeguL.github.io/between-hands/ — publication pending verification.  
-**Source URL:** https://github.com/zhengdaodeguL/between-hands — publication pending verification.  
-**Video URL:** YouTube publication in progress; no verified URL yet.  
+**App URL:** https://zhengdaodegul.github.io/between-hands/ — verified 2026-09-29.  
+**Source URL:** https://github.com/zhengdaodeguL/between-hands — verified 2026-09-29.  
+**Video URL:** Deferred by the entrant; no public URL yet.  
 **Submission:** the entrant must perform the final competition submission personally.
-
