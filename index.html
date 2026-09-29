@@ -1,5 +1,23 @@
 <!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071D18"><meta name="description" content="A small world, restored by your hands. A seated WebXR rain-garden puzzle."><title>Between Hands — A small world, restored</title><link rel="icon" href="data:,"></head>
-<body><div id="scene-container" aria-label="Three-dimensional rain garden"></div><div id="loading" role="status">Growing a small world…</div>
+<body><div id="scene-container" aria-label="Three-dimensional rain garden"></div><div id="loading" role="status"><span id="loading-message">Growing a small world…</span><button id="retry-load" hidden>Try again</button></div>
+<script>
+// This small fallback must run even when the application module cannot download.
+(() => {
+  const loading = document.getElementById('loading');
+  const message = document.getElementById('loading-message');
+  const retry = document.getElementById('retry-load');
+  function showLoadError() {
+    loading.hidden = false;
+    message.textContent = 'The garden could not load. Check your connection and try again.';
+    retry.hidden = false;
+  }
+  window.addEventListener('error', (event) => {
+    if (event.target instanceof HTMLScriptElement && event.target.type === 'module') showLoadError();
+  }, true);
+  window.addEventListener('between-hands:load-error', showLoadError);
+  retry.addEventListener('click', () => location.reload());
+})();
+</script>
 <header><a href="./" class="wordmark">BETWEEN<br><span>HANDS</span><i>◌</i></a><span class="edition">A SMALL WORLD,<br>RESTORED BY YOU.</span><div class="header-actions"><button id="mute">Sound on</button><button id="quiet">Gentle motion off</button></div></header>
 <main><section class="story"><p class="eyebrow" id="chapter">CHAPTER 01 / 03</p><h1 id="level-title">Wake the Seed</h1><p id="instruction">Bring the rain home.</p><div class="actions"><button id="start" class="primary">Begin this chapter</button><button id="pause">Pause</button><button id="reset">Reset path</button></div><div class="live"><span class="seed">✦</span><p id="status" role="status" aria-live="polite">A little rain can change everything.</p></div><progress id="growth" value="0" max="1" aria-label="Garden restoration progress"></progress></section>
 <aside class="session"><p class="eyebrow">THE WORLD FITS IN YOUR HANDS</p><p>Take a seat. Pinch the round handle with your left hand and the diamond with your right. Shape the rain through glowing orbs.</p><button id="enter-xr" class="primary">Preparing immersive VR…</button><button id="desktop">Try desktop rehearsal</button><button id="recenter">Recenter garden</button><p class="small" id="tracking">Hand tracking · no controllers needed</p></aside>

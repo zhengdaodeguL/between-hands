@@ -533,7 +533,7 @@ async function boot() {
     });
 }
 boot().catch((e) => {
-  el("loading").textContent = "The garden could not load. " + String(e);
+  window.dispatchEvent(new Event("between-hands:load-error"));
   console.error(e);
 });
 

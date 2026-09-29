@@ -1,5 +1,9 @@
 # Changelog
 
+## Prototype fixes — 2026-09-29
+
+- Show a retry action when the application script or runtime assets fail to load.
+
 ## 0.1.0 — 2026-09-29
 
 Initial public prototype and source release. GitHub Pages and the public three-chapter desktop walkthrough were verified on 2026-09-29.

@@ -27,7 +27,7 @@ A later parent-agent IWER run supplied the raw three-chapter capture and final c
 - With explicit user authorization, an eligibility clarification was sent on 2026-09-28 to the competition organizer at `keshya@devpost.com`; the parent agent verified it in Gmail's sent folder.
 - No organizer decision is recorded. Historical Developer Access under rules §2(c) remains unconfirmed. An application receipt and a sent inquiry do not resolve it.
 
-## Remaining gates
+## Gates recorded before publication — historical
 
 - Real-device hand grabbing and progression; emulator release/regrab after tracking loss, reset, and any untested recovery scenarios. The supplied IWER three-chapter walkthrough is recorded below.
 - Spatial begin/pause/resume/reset/recenter/mute/exit controls and session end/reentry.
@@ -84,3 +84,11 @@ Workflow https://github.com/zhengdaodeguL/between-hands/actions/runs/36527985723
 After the programmatic-menu change, actual IWER Hands UI actions verified Begin, Pause, Resume, Sound, Reset, Recenter, and Exit. Moving the emulated headset to x=0.10 and activating Recenter moved the panel x from 0 to 0.10000000149. Both emulated hands completed chapter one, and a menu pinch on Begin / Next entered Share the Rain. Screenshots showed no menu-label overflow. These checks did not directly assign game state. Exit returned to the desktop correctly; the console had zero errors and one Three.js warning about resizing while VR was presenting. That warning remains recorded rather than being presented as a warning-free XR run.
 
 Local QA screenshots and interaction traces are under the ignored output/playwright directory. Quest hardware testing, first-play timing, eligibility, Start approval, the target launch date, public YouTube upload, and personal final competition submission remain incomplete.
+
+## Loading failure recovery — 2026-09-29
+
+The deployed version at commit 63d47da was tested with its entry JavaScript request aborted. After requests became idle, the screen still said “Growing a small world…” and provided no retry control. This reproduced the unresolved asset-load-failure requirement.
+
+The fix keeps a small failure handler in the HTML so it remains available when the application module cannot download. Entry-module failures and runtime boot failures now show a concise connection message with a Try again button. Internal error details stay in the console. The overlay uses system fallback colors when JavaScript has not yet applied the game theme.
+
+The local production build was tested twice: aborting the entry-module request, and aborting the lazy world-initializer asset. Both displayed the error and retry control. Removing the simulated network failure and clicking Try again reloaded the page and reached the ordinary game UI in both cases. The error screen was visually inspected. Type checking, production build, and full-license collection passed. Public deployment verification is recorded after publication.
